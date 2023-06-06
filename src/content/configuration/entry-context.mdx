@@ -44,6 +44,8 @@ A dynamically loaded module is **not** an entry point.
 
 A rule to consider: one entry point per HTML page. SPA: one entry point, MPA: multiple entry points.
 
+If not set or if you have set a single entrypoint that does not actually exist, then webpack sets `./src` as the default value for `entry`.
+
 ```js
 module.exports = {
   //...
